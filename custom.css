@@ -1,4 +1,8 @@
 
+.container {
+    width: auto;
+}
+
 /*#######################################################
                 header
 #######################################################*/
@@ -27,9 +31,7 @@ span.save_widget span.filename {
 /*#######################################################
                 outline
 #######################################################*/
-.container {
-    width: auto;
-}
+
 
 .notebook_app {
     background-color: #949191;
@@ -333,7 +335,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 #######################################################*/
 div.output_area pre {
     margin: 0;
-    padding: 1px 0 1px 0;
+    padding: 5px 0 5px 0;
     border: 0;
     vertical-align: baseline;
     color: #e2d2d2;
@@ -347,12 +349,21 @@ div.cell.unselected div.output_area{
     box-shadow: inset 0 0 5px #aaa;
 }
 
+div.output.output_scroll {
+ box-shadow: none;
+}
 ::-webkit-scrollbar {
  width: 11px;
  max-height: 9px;
  background-color: #2b3031;
  border-radius: 3px;
  border: none;
+}
+::-webkit-scrollbar-track {
+ background: #2b3031;
+ border: none;
+ width: 11px;
+ max-height: 9px;
 }
 ::-webkit-scrollbar-thumb {
  border-radius: 2px;
@@ -424,4 +435,3 @@ span.ansired,
  color: #fb4934;
 
 }
-
