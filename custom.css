@@ -27,7 +27,9 @@ span.save_widget span.filename {
 /*#######################################################
                 outline
 #######################################################*/
-
+.container {
+    width: auto;
+}
 
 .notebook_app {
     background-color: #949191;
