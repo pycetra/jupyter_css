@@ -42,6 +42,10 @@ span.save_widget span.filename {
     color: white !important;
 }
 
+.toc-item-highlight-select{
+    background-color:#7e7541 !important;
+}
+
 #toc a, #navigate_menu a, .toc{
     color: #ffffff !important;
     font-size: 15px !important;
