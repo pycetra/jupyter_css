@@ -1,0 +1,425 @@
+
+/*#######################################################
+                header
+#######################################################*/
+div#menubar-container, div#header-container {
+    color: b;
+    width: auto;
+    background-color: black;
+}
+
+span.save_widget span.filename {
+    height: 100%;
+    line-height: 1em;
+    margin-left: 16px;
+    border: none;
+    font-size: 146.5%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 2px;
+    color: wheat;
+}
+
+#menubar .navbar-collapse {
+    background-color: gainsboro;
+}
+/*#######################################################
+                outline
+#######################################################*/
+
+
+.notebook_app {
+    background-color: #949191;
+}
+
+#toc-wrapper {
+    background-color: black !important;
+    color: white !important;
+}
+
+#toc a, #navigate_menu a, .toc{
+    color: #ffffff !important;
+    font-size: 15px !important;
+}
+
+#toc-wrapper .toc-item-num{
+    color: #ffffff !important;
+    font-size: 15px !important;
+}
+
+#notebook-container {
+    background-color: black;
+}
+
+.rendered_html h1, .text_cell_render h1{
+    color: #fabd2f !important;
+}
+.rendered_html h2, .text_cell_render h2{
+    color: #fabd2f !important;
+}
+.rendered_html h3, .text_cell_render h3{
+    color: #fabd2f !important;
+}
+.rendered_html h4, .text_cell_render h4{
+    color: #fabd2f !important;
+}
+.rendered_html h5, .text_cell_render h5{
+    color: #fabd2f !important;
+}
+.rendered_html h6, .text_cell_render h6{
+    color: #fabd2f !important;
+}
+
+/*#######################################################
+                font type
+#######################################################*/
+@font-face {
+ font-family: "Meslo";
+ font-style: normal;
+ src: local('"Meslo"'), url('fonts/meslo.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: "Meslo";
+ font-style: italic;
+ src: local('"Meslo"'), url('fonts/meslo-italic.ttf') format('truetype');
+}
+
+div.prompt,
+.prompt {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.output_subarea.output_text.output_stream.output_stdout,
+div.output_subarea.output_text {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.output_area pre {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.output_html {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.prompt.output_prompt {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.out_prompt_overlay.prompt {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.cell.text_cell.rendered .prompt {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.cell.text_cell.unrendered .prompt {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.rendered_html code {
+ font-family: "Meslo", monospace, monospace;
+}
+
+.well code,
+code {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.rendered_html pre {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.text_cell_render pre,
+div.text_cell_render code {
+ font-family: "Meslo", monospace, monospace;
+}
+
+.kse-input-group-pretty > kbd {
+ font-family: "Meslo", monospace, monospace;
+}
+
+.kse-input-group-pretty > kbd {
+ font-family: "Meslo", monospace, monospace;
+}
+
+input.raw_input {
+ font-family: "Meslo", monospace, monospace;
+}
+
+.terminal-app .terminal {
+ font-family: "Meslo", monospace, monospace;
+}
+
+div.CodeMirror,
+div.CodeMirror pre {
+ font-family: "Meslo", monospace, monospace;
+}
+
+.ipython_tooltip {
+ font-family: "Meslo", monospace, monospace;
+}
+
+.ipython_tooltip .tooltiptext pre {
+ font-family: "Meslo", monospace, monospace;
+}
+
+.cm-s-ipython.CodeMirror {
+ font-family: "Meslo", monospace, monospace;
+ font-style: normal;
+}
+
+.completions select {
+ font-family: "Meslo", monospace, monospace;
+}
+
+/*#######################################################
+                Code
+#######################################################*/
+/* cell index */
+div.input_prompt {
+    color: #eff0f5;
+    border-top: 1px solid transparent;
+}
+
+
+.cm-s-ipython.CodeMirror {
+ font-family: "Meslo", monospace, monospace;
+ font-size: 13pt;
+ background: #282828;
+ color: #ebdbb2;
+ border-radius: 2px;
+ font-style: normal;
+ font-weight: normal;
+}
+.cm-s-ipython div.CodeMirror-selected {
+ background: #3c3836;
+}
+.CodeMirror-gutters {
+ border: none;
+ border-right: 1px solid #282828 !important;
+ background-color: #282828 !important;
+ background: #282828 !important;
+ border-radius: 0px;
+ white-space: nowrap;
+}
+.cm-s-ipython .CodeMirror-gutters {
+ background: #282828;
+ border: none;
+ border-radius: 0px;
+ width: 36px;
+}
+.cm-s-ipython .CodeMirror-linenumber {
+ color: #bdae93;
+}
+.CodeMirror-sizer {
+ margin-left: 40px;
+}
+.CodeMirror-linenumber,
+div.CodeMirror-linenumber,
+.CodeMirror-gutter.CodeMirror-linenumberdiv.CodeMirror-gutter.CodeMirror-linenumber {
+ padding-right: 1px;
+ margin-left: 0px;
+ margin: 0px;
+ width: 26px !important;
+ padding: 0px;
+ text-align: right;
+}
+.CodeMirror-linenumber {
+ color: #bdae93;
+}
+.cm-s-ipython .CodeMirror-cursor {
+ border-left: 2px solid #0095ff !important;
+}
+.cm-s-ipython span.cm-comment {
+ color: #928374;
+ font-style: italic;
+}
+.cm-s-ipython span.cm-atom {
+ color: #d3869b;
+}
+.cm-s-ipython span.cm-number {
+ color: #83a598;
+}
+.cm-s-ipython span.cm-property {
+ color: #ebdbb2;
+}
+.cm-s-ipython span.cm-attribute {
+ color: #ebdbb2;
+}
+.cm-s-ipython span.cm-keyword {
+ color: #fb4934;
+ font-weight: normal;
+}
+.cm-s-ipython span.cm-string {
+ color: #b8bb26;
+}
+.cm-s-ipython span.cm-meta {
+ color: #b16286;
+}
+.cm-s-ipython span.cm-operator {
+ color: #d3869b;
+}
+.cm-s-ipython span.cm-builtin {
+ color: #d3869b;
+}
+.cm-s-ipython span.cm-variable {
+ color: #ebdbb2;
+}
+.cm-s-ipython span.cm-variable-2 {
+ color: #8ec07c;
+}
+.cm-s-ipython span.cm-variable-3 {
+ color: #b16286;
+}
+.cm-s-ipython span.cm-def {
+ color: #83a598;
+ font-weight: normal;
+}
+.cm-s-ipython span.cm-error {
+ background: #282828;
+}
+.cm-s-ipython span.cm-tag {
+ color: #83a598;
+}
+.cm-s-ipython span.cm-link {
+ color: #83a598;
+}
+.cm-s-ipython span.cm-storage {
+ color: #d3869b;
+}
+.cm-s-ipython span.cm-entity {
+ color: #b8bb26;
+}
+.cm-s-ipython span.cm-quote {
+ color: #b8bb26;
+}
+div.CodeMirror span.CodeMirror-matchingbracket {
+ color: #ffffff;
+ font-weight: bold;
+ background-color: #bdae93;
+}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+ color: #ffffff;
+ font-weight: bold;
+ background: #fb4934 !important;
+}
+.cm-header-1 {
+ font-size: 215%;
+}
+.cm-header-2 {
+ font-size: 180%;
+}
+.cm-header-3 {
+ font-size: 150%;
+}
+.cm-header-4 {
+ font-size: 120%;
+}
+.cm-header-5 {
+ font-size: 100%;
+}
+.cm-s-default .cm-hr {
+ color: #d3869b;
+}
+
+/*#######################################################
+                output
+#######################################################*/
+div.output_area pre {
+    margin: 0;
+    padding: 1px 0 1px 0;
+    border: 0;
+    vertical-align: baseline;
+    color: #e2d2d2;
+    border-radius: 0;
+    font-size:17px;
+}
+
+
+
+div.cell.unselected div.output_area{
+    box-shadow: inset 0 0 5px #aaa;
+}
+
+::-webkit-scrollbar {
+ width: 11px;
+ max-height: 9px;
+ background-color: #2b3031;
+ border-radius: 3px;
+ border: none;
+}
+::-webkit-scrollbar-thumb {
+ border-radius: 2px;
+ border: none;
+ background: #d5c4a1;
+ background-clip: content-box;
+ width: 11px;
+}
+
+table {
+    background-color: white;
+}
+
+
+
+/*#######################################################
+                output font
+#######################################################*/
+span.ansiblack,
+.ansi-black-fg {
+ color: #1d2021;
+
+}
+
+span.ansiblue,
+.ansi-blue-fg,
+.ansi-blue-intense-fg {
+ color: #83a598;
+
+}
+
+span.ansigray,
+.ansi-gray-fg,
+.ansi-gray-intense-fg {
+ color: #fbf1c7;
+
+}
+
+span.ansigreen,
+.ansi-green-fg {
+ color: #b8bb26;
+
+}
+
+span.ansipurple,
+.ansi-purple-fg,
+.ansi-purple-intense-fg {
+ color: #b16286;
+
+}
+
+span.ansicyan,
+.ansi-cyan-fg,
+.ansi-cyan-intense-fg {
+ color: #b16286;
+
+}
+
+span.ansiyellow,
+.ansi-yellow-fg,
+.ansi-yellow-intense-fg {
+ color: #fabd2f;
+
+}
+
+span.ansired,
+.ansi-red-fg,
+.ansi-red-intense-fg {
+ color: #fb4934;
+
+}
+
