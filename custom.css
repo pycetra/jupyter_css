@@ -1,8 +1,11 @@
 .sidebar-wrapper .ui-resizable-e {
-    position: absolute;
-    top: calc(50% - 8px);
     background-color: white;
 }
+
+.text_cell.rendered .rendered_html {
+    color: #ffc107;
+}
+
 
 
 .container {
