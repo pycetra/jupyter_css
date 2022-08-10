@@ -1,3 +1,7 @@
+div.output_subarea.output_text {
+    background-color: black;
+}
+
 .sidebar-wrapper .ui-resizable-e {
     background-color: white;
 }
