@@ -125,6 +125,11 @@ div.output_html {
  font-family: "Meslo", monospace, monospace;
 }
 
+div.output_html td{
+ font-family: "Meslo", monospace, monospace;
+ font-weight: bold;
+}
+
 div.prompt.output_prompt {
  font-family: "Meslo", monospace, monospace;
 }
